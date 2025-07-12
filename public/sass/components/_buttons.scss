@@ -1,0 +1,14 @@
+.header__content-left-basket {
+  width: 15rem;
+  height: 95%;
+  background-color: $primary-color;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $default-transition;
+  &:hover {
+    background-color: $primary-color-dark;
+    cursor: pointer;
+  }
+}

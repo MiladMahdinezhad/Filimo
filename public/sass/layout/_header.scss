@@ -1,0 +1,114 @@
+/*!---------------------------- Header Styles -------------------------*/
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0;
+  position: fixed;
+  z-index: 20;
+  margin: 0 auto;
+  display: flex;
+  &__content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-right {
+      width: 55rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &-mobileclose {
+        display: none;
+      }
+    }
+    &-hamburger {
+      display: none;
+      font-size: 2.5rem;
+      color: $main-white-font-color;
+      &:hover {
+        color: orange;
+        cursor: pointer;
+      }
+    }
+    &-image {
+      width: 8.5rem;
+      display: flex;
+      align-items: center;
+    }
+    &--line {
+      height: 75%;
+      width: 0.1rem;
+      background-color: white;
+      margin-right: 2.5rem;
+    }
+    &-item {
+      height: 100%;
+      width: 8.5rem;
+      margin-right: 2.5rem;
+      display: flex;
+      align-items: center;
+      color: $main-white-font-color;
+      transition: $default-transition;
+      &:hover {
+        color: orange;
+        cursor: pointer;
+      }
+      &-icon--orange {
+        font-size: 2rem;
+        color: orange;
+      }
+      &-text {
+        font-size: $main-font;
+        margin-right: 0.7rem;
+      }
+    }
+    &-left {
+      width: 30rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      &-signin {
+        width: 5rem;
+        height: 95%;
+        background-color: $gray-background-btn;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-white-font-color;
+        font-size: $main-font;
+        transition: $default-transition;
+        &:hover {
+          background-color: $gray-background-btn-lighter;
+          cursor: pointer;
+        }
+      }
+      &-icon {
+        width: 2rem;
+        color: $main-white-font-color;
+      }
+      &-text {
+        color: $main-white-font-color;
+        font-size: $main-font;
+        margin-right: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-mobileicon {
+        color: $main-white-font-color;
+        font-size: 2rem;
+        display: none;
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+}

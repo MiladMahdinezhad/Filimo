@@ -1,0 +1,74 @@
+/*! ---------------------Details Section Style Start------------------ */
+.details {
+  width: 100%;
+  background: radial-gradient(
+    circle at 100% 100%,
+    #151515,
+    #151515 20%,
+    rgba(0, 29, 13, 0.54),
+    rgba(0, 29, 13, 0.54) 50%,
+    #151515 80%,
+    #151515
+  );
+  padding-bottom: 6rem;
+  &__content {
+    width: $default-width;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    @include flex-column();
+    &-title--white {
+      color: $main-white-font-color;
+      font-size: 6rem;
+    }
+    &-items {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1.5rem;
+      &--green {
+        color: rgb(1, 78, 1);
+      }
+      & > span {
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+    &-button {
+      margin-top: 3.5rem;
+      display: flex;
+      @include flex-column();
+    }
+    &-basket {
+      width: 28.5rem;
+      height: 6rem;
+      background-color: $primary-color;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.7rem;
+      transition: $default-transition;
+      &:hover {
+        background-color: $primary-color-dark;
+        cursor: pointer;
+      }
+      &-icon {
+        width: 3rem;
+        color: $main-white-font-color;
+      }
+      &-text {
+        color: $main-white-font-color;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+/*! -----------------------Details Section Style END------------------ */

@@ -1,0 +1,132 @@
+/*! ---------------------Cinema online Style Start-------------------- */
+.cinemaonline {
+  width: 100%;
+  background: url(../images/bg-cinama.webp) no-repeat;
+  background-size: cover;
+  padding: 2.5rem 0;
+  margin: 1rem 0;
+  &__content {
+    width: $default-width;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 6rem;
+    &-head {
+      display: flex;
+      @include flex-column();
+      & > h3 {
+        color: $main-white-font-color;
+        font-weight: 600;
+        font-size: 3.5rem;
+      }
+      &-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+      }
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 1.5rem;
+        &--green {
+          color: rgb(1, 78, 1);
+        }
+        & > span {
+          color: #d8d8d8;
+        }
+      }
+    }
+  }
+  /*! ---------------Cinema online items Style Start-------------------- */
+  &__items {
+    width: 100%;
+    height: 52rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-left: 2rem;
+  }
+  &__item {
+    width: 47%;
+    height: max-content;
+    background-color: rgba(43, 43, 43, 0.21);
+    border-radius: 1rem;
+    border: 1px solid rgb(75, 75, 75);
+    padding: 1rem;
+    display: flex;
+    &-img {
+      width: 35%;
+      height: 22rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-info {
+      width: 65%;
+      height: 100%;
+      padding: 1.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.8rem;
+      &-firstrow {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &-title {
+      color: $main-white-font-color;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    &-icon {
+      color: $main-white-font-color;
+    }
+    &-online {
+      color: $main-white-font-color;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.4rem 0.8rem;
+      border-radius: 2rem;
+      font-size: $sec-font;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    &-director {
+      color: rgba(255, 255, 255, 0.647);
+      font-size: 1.4rem;
+      font-weight: 100;
+    }
+    &-genre {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.4rem 0.8rem;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+      color: $main-white-font-color;
+      font-weight: bold;
+    }
+    &-btn {
+      color: $main-white-font-color;
+      border: 1px solid $main-white-border-color;
+      border-radius: 0.7rem;
+      padding: 1rem 1rem;
+      font-size: $sec-font;
+      transition: $default-transition;
+      &:hover {
+        cursor: pointer;
+        background-color: #151515;
+      }
+    }
+  }
+}
+/*! ---------------------Cinema online items Style END---------------- */
+/*! ---------------------Cinema online Style END---------------------- */

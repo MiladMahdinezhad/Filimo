@@ -1,0 +1,24 @@
+/*!---------------------------- Reset Styles -------------------------*/
+html {
+  font-size: 62.5%;
+}
+svg {
+  font-size: 1.6rem;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  direction: rtl;
+  font-family: IranSansWeb, sans-serif;
+  font-weight: 500;
+  background-color: #151515;
+}

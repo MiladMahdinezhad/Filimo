@@ -1,0 +1,62 @@
+/*!---------------------------- Popular Styles -----------------------*/
+.popular {
+  width: $default-width;
+  margin: 3rem auto;
+  &__title {
+    color: $main-white-font-color;
+    font-size: $main-font;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &-switch {
+      width: 12rem;
+      height: 3rem;
+      border: 1px solid $main-white-border-color;
+      border-radius: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.2rem;
+    }
+    &-item {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+        background-color: rgba(255, 255, 255, 0.12);
+        font-weight: 600;
+        border-radius: 1.5rem;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+    &-item {
+      width: 16.5rem;
+      height: 22rem;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      &.active {
+        width: 18.15rem;
+        height: 24.2rem;
+        border: 2px solid silver;
+      }
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.67;
+      transition: $default-transition;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+}

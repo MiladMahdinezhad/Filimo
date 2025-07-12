@@ -1,0 +1,250 @@
+/*! media query ---> min-width: 1200px */
+@media only screen and (min-width: 76em) {
+  .learn__pic {
+    max-width: 40%;
+    height: auto;
+  }
+}
+
+/*! media query ---> width: 1200px */
+@media only screen and (max-width: 75em) {
+  .header__content,
+  .popular,
+  .device,
+  .learn__content,
+  .freemovie,
+  .kidmovie__content,
+  .cinemaonline__content,
+  .comments {
+    width: 90%;
+  }
+  .learn__content-info {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .freemovie__items {
+    width: max-content;
+  }
+  .cinemaonline__item-img {
+    width: 40%;
+  }
+  .cinemaonline__item-info {
+    width: 60%;
+  }
+  .footer__disapear {
+    display: none;
+  }
+  .footer__content-subitems {
+    background-color: transparent;
+    position: static;
+    box-shadow: none;
+    visibility: visible;
+    transform: none;
+    transition: none;
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+  }
+  .footer__content-subitems::after {
+    display: none;
+  }
+  .footer__content-subitem-link:hover {
+    background-color: transparent;
+  }
+}
+
+/*! media query ---> width: 992px */
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 55%;
+  }
+  .popular__content {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .movie__content-items {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .movie__content-film {
+    width: 30rem;
+  }
+  .kidmovie__content-items > p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .cinemaonline__content-head-item {
+    display: none;
+  }
+  .cinemaonline__item {
+    width: 100%;
+  }
+  .cinemaonline__item-img {
+    width: 30%;
+  }
+  .cinemaonline__item-info {
+    width: 70%;
+  }
+  .comments__content-item {
+    width: 45%;
+  }
+  .comments__content {
+    justify-content: initial;
+    gap: 3rem;
+  }
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*! media query ---> width: 768px */
+@media only screen and (max-width: 48em) {
+  .header__content-right {
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    right: -100rem;
+    padding: 3rem 3rem;
+    align-items: flex-start;
+    gap: 3rem;
+    box-shadow: 0 0 5px -1px #fff;
+    border-radius: 0 0 0 10px;
+  }
+  .header__content-link {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .header__content-image {
+    height: 100%;
+    width: 100%;
+  }
+  .header__content--line {
+    height: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .header__content-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  .header__item-icon {
+    font-size: 2.2rem;
+  }
+  .header__content-item-icon--orange {
+    font-size: 2.2rem;
+  }
+  .header__content-item-text {
+    font-size: 2.6rem;
+  }
+  .header__content-hamburger {
+    display: flex;
+  }
+  .slider__details-items,
+  .slider__details-button {
+    display: none;
+  }
+  html {
+    font-size: 50%;
+  }
+  .device__picture {
+    width: 70%;
+  }
+  .device__content {
+    width: 90%;
+  }
+  .device {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .learn__pic-img {
+    display: none;
+  }
+  .learn__content {
+    display: flex;
+    justify-content: center;
+  }
+  .learn__fuckup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kidmovie__content-items > h2 {
+    font-size: 1.8rem;
+  }
+  .header__content-right-mobileclose {
+    display: flex;
+    font-size: 3rem;
+    color: orange;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    cursor: pointer;
+  }
+}
+
+/*! media query ---> width: 576px */
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 45%;
+  }
+  .slider__details-title--white {
+    text-align: center;
+  }
+  .movie__content-description-logo,
+  .header__content-left-basket,
+  .header__content-left-signin {
+    display: none;
+  }
+  .movie__bg {
+    background: none;
+  }
+  .kidmovie__content-image {
+    display: none;
+  }
+  .kidmovie__content-items {
+    width: 100%;
+  }
+  .cinemaonline__item-img {
+    width: 38%;
+  }
+  .cinemaonline__item-info {
+    width: 62%;
+  }
+  .comments__content-item {
+    width: 100%;
+  }
+  .comments__content-item-text {
+    line-height: 2rem;
+  }
+  .faq__content-item {
+    width: 100%;
+  }
+  .footer__content-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .header__content-left {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__content-left-mobileicon {
+    display: flex;
+    cursor: pointer;
+  }
+  .header__content-item-text {
+    font-size: 2rem;
+  }
+}

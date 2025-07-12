@@ -1,0 +1,58 @@
+/*! ----------------------FAQ Section Style Start--------------------- */
+.faq {
+  width: 100%;
+  margin-top: 5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  &__content {
+    width: $default-width;
+    height: 100%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    &-title {
+      display: flex;
+      @include flex-column();
+      color: $main-white-font-color;
+      font-size: $sec-font;
+      font-weight: bold;
+      &::after {
+        content: "سوال شایع دیگر کاربران شاید برای شما پیش امده باشد";
+        font-size: $main-font;
+        color: #9e9e9e;
+        font-weight: 100;
+      }
+    }
+    &-items {
+      width: 100%;
+      display: flex;
+      @include flex-column();
+      margin-top: 3rem;
+      gap: 0.8rem;
+    }
+    &-item {
+      width: 75%;
+      height: max-content;
+      background-color: #ffffff05;
+      border: 1px solid #33353d;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.3rem;
+      &:hover {
+        cursor: pointer;
+      }
+      &-question {
+        color: $main-white-font-color;
+        font-size: 1.4rem;
+      }
+      &-icon {
+        color: rgb(205, 133, 0);
+      }
+    }
+  }
+}
+/*! ---------------------FAQ Section Style END------------------------ */

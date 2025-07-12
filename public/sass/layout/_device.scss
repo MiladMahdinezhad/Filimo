@@ -1,0 +1,77 @@
+/*! ---------------------Devices Section Style----------------------- */
+.device {
+  width: $default-width;
+  margin: 6rem auto;
+  display: flex;
+  justify-content: space-between;
+  &__picture {
+    width: 47%;
+    height: auto;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    width: 47%;
+    height: auto;
+    &-title {
+      color: $main-white-font-color;
+      font-size: 1.8rem;
+    }
+    &-info {
+      color: #d8d8d8;
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: 2.5rem;
+    }
+    &-item {
+      display: flex;
+      margin-top: 2.5rem;
+      gap: 2rem;
+    }
+    &-right-icon {
+      color: #444545;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+    }
+    &-left-title {
+      display: block;
+      font-size: 1.8rem;
+      color: #d8d8d8;
+      margin-bottom: 0.8rem;
+    }
+    &-left-op {
+      font-size: 1.1rem;
+      color: #a1a1a1;
+    }
+    &-basket {
+      width: 16rem;
+      height: 4rem;
+      background-color: $primary-color;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $default-transition;
+      margin-top: 3rem;
+      gap: 1rem;
+      &:hover {
+        background-color: $primary-color-dark;
+        cursor: pointer;
+      }
+      &-icon {
+        width: 2rem;
+        color: $main-white-font-color;
+      }
+      &-text {
+        color: $main-white-font-color;
+        font-size: $main-font;
+      }
+    }
+  }
+}

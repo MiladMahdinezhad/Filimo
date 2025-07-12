@@ -1,0 +1,76 @@
+/*! -----------------------Freemovie Style Start---------------------- */
+.freemovie {
+  width: $default-width;
+  margin: 4.5rem auto;
+  padding: 1rem;
+
+  &__title {
+    width: 100%;
+    & > h2 {
+      color: $main-white-font-color;
+      font-size: 1.8rem;
+      margin-bottom: 5rem;
+    }
+  }
+  &__overflow {
+    width: 100%;
+    overflow: auto;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__item {
+    width: 16.5rem;
+    height: 25rem;
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+    &-image {
+      width: 100%;
+      height: 85%;
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+      &-title {
+        width: 100%;
+        height: 15%;
+        color: $main-white-font-color;
+        display: flex;
+        align-items: center;
+        font-size: $sec-font;
+      }
+    }
+    &-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+  }
+  &__lable {
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #012806c9;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+    &-icon {
+      color: $primary-color;
+    }
+    &-text {
+      color: $primary-color;
+    }
+  }
+}
+/*! -----------------------Freemovie Style END---------------------- */
