@@ -29,3 +29,7 @@ This project is a responsive front-end recreation of the Filimo website's homepa
     Media Queries
 
     Flexbox & Grid Layout
+
+📜 License
+
+This project is intended for educational and personal use only. All copyrights and trademarks related to Filimo belong to their respective owners.
